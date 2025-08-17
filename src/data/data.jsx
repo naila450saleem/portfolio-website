@@ -1,26 +1,47 @@
+// src/data/data.jsx
 import { Star, Award, ShieldCheck } from 'lucide-react';
+
+// Import all images from src/assets
+import frame26 from "../assets/Frame 26.svg";
+import frame60 from "../assets/Frame 60.svg";
+import rect6 from "../assets/Rectangle 6.svg";
+import rect6_1 from "../assets/Rectangle 6 (1).svg";
+import img1 from "../assets/1.png";
+import img2 from "../assets/2.png";
+import img3 from "../assets/3.png";
+import img4 from "../assets/4.png";
+import cont from "../assets/cont.png";
+import website from "../assets/website.png";
+import website1 from "../assets/website1.png";
+import website2 from "../assets/website2.png";
+import novana from "../assets/Novana.PNG";
+import girl from "../assets/girl.png";
+import frame68 from "../assets/Frame 68.svg";
+import propDefault from "../assets/Property1Default.svg";
+import propVariant from "../assets/Property1Variant2.svg";
+import sms from "../assets/sms.svg";
 
 // Experiences
 export const experiences = [
   {
     company: "Freelance Projects",
-  duration: "Jan 2022 – Dec 2023",
-  role: "Frontend Developer",
-  desc: "Built websites using React and CSS",
+    duration: "Jan 2022 – Dec 2023",
+    role: "Frontend Developer",
+    desc: "Built websites using React and CSS",
     dotColor: "orange",
   },
   {
-     company: "Portfolio Project",
-  duration: "Jun 2023",
-  role: "React Developer",
-  desc: "Created UI with React and Tailwind",
+    company: "Portfolio Project",
+    duration: "Jun 2023",
+    role: "React Developer",
+    desc: "Created UI with React and Tailwind",
     dotColor: "teal",
   },
   {
     company: "Team Project",
-  duration: "Aug 2023 – Oct 2023",
-  role: "UI Developer",
-  desc: "Built movie listing app using React",
+    duration: "Aug 2023 – Oct 2023",
+    role: "UI Developer",
+    desc: "Built movie listing app using React",
     dotColor: "bg-[#FD853A]",
   },
 ];
@@ -36,18 +57,9 @@ export const buttons = [
 
 // Stats with icons
 export const iconAndText = [
-  {
-    icon: Star,
-    name: "4.9 Average Rating",
-  },
-  {
-    icon: Award,
-    name: "25+ Winning Awards",
-  },
-  {
-    icon: ShieldCheck,
-    name: "Certified Product Design",
-  },
+  { icon: Star, name: "4.9 Average Rating" },
+  { icon: Award, name: "25+ Winning Awards" },
+  { icon: ShieldCheck, name: "Certified Product Design" },
 ];
 
 // Skills
@@ -63,92 +75,40 @@ export const skills = [
   "Express",
 ];
 
-// Blog entries
-// export const blogs = [
-//   {
-//     image: "/Rectangle 6.svg",
-//     button: "Read More",
-//     name: "Mahesh Pokale",
-//     date: "10 Nov, 2024",
-//     title: "Design Unraveled: Behind the Scenes of UI/UX Magic",
-//   },
-//   {
-//     image: "/Frame 60.svg",
-//     button: "Explore",
-//     name: "Sarah Johnson",
-//     date: "12 Dec, 2024",
-//     title: "Mastering Tailwind: Tips for Clean UI Development",
-//   },
-//   {
-//     image: "/Rectangle 6 (1).svg",
-//     button: "Check Now",
-//     name: "John Doe",
-//     date: "1 Jan, 2025",
-//     title: "Modern Web Development in 2025",
-//   },
-// ];
-
 // Portfolio gallery
 export const portfolioData = [
-  {
-    image: "./Frame 26.svg",
-    title: "Lirante 1",
-    href: "/project-1",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-  },
-  {
-    image: "./Frame 26.svg",
-    title: "Lirante 2",
-    href: "/project-2",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-  },
-  {
-    image: "./Frame 26.svg",
-    title: "Lirante 3",
-    href: "/project-3",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-  },
-  {
-    image: "./Frame 26.svg",
-    title: "Lirante 4",
-    href: "/project-4",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-  },
+  { image: frame26, title: "Lirante 1", href: "/project-1", desc: "Lorem ipsum dolor sit amet..." },
+  { image: frame26, title: "Lirante 2", href: "/project-2", desc: "Lorem ipsum dolor sit amet..." },
+  { image: frame26, title: "Lirante 3", href: "/project-3", desc: "Lorem ipsum dolor sit amet..." },
+  { image: frame26, title: "Lirante 4", href: "/project-4", desc: "Lorem ipsum dolor sit amet..." },
 ];
 
 // Testimonials
 export const reviews = [
-  {
-    name: "Mahesh Pokale",
-    role: "Web Designer",
-    rating: 5,
-    text: "Consectetur adipiscing elit. Sed congue interdum ligula...",
-  },
-  {
-    name: "Sarah Johnson",
-    role: "Product Manager",
-    rating: 4,
-    text: "Excellent work! Very professional and meets deadlines...",
-  },
-  {
-    name: "John Doe",
-    role: "UI/UX Lead",
-    rating: 5,
-    text: "Top quality design and coding. Strong attention to detail...",
-  },
-  {
-    name: "Aryan Sharma",
-    role: "Software Engineer",
-    rating: 4,
-    text: "Innovative approach, clean design, and prompt delivery...",
-  },
+  { name: "Mahesh Pokale", role: "Web Designer", rating: 5, text: "Consectetur adipiscing elit. Sed congue interdum ligula..." },
+  { name: "Sarah Johnson", role: "Product Manager", rating: 4, text: "Excellent work! Very professional and meets deadlines..." },
+  { name: "John Doe", role: "UI/UX Lead", rating: 5, text: "Top quality design and coding. Strong attention to detail..." },
+  { name: "Aryan Sharma", role: "Software Engineer", rating: 4, text: "Innovative approach, clean design, and prompt delivery..." },
 ];
 
-// Services/Expertise
+// Services / Expertise
 export const cardData = [
-  { title: "Ecommerce Design", imageSrc: "./2.png" },
-  { title: "Movie Website", imageSrc: "./1.png" },
-  { title: "Dashboard", imageSrc: "./3.png" },
-  { title: "Cloth Website", imageSrc: "./4.png" },
-  { title: "Contact Page", imageSrc: "./cont.png" }
+  { title: "Ecommerce Design", imageSrc: img2 },
+  { title: "Movie Website", imageSrc: img1 },
+  { title: "Dashboard", imageSrc: img3 },
+  { title: "Cloth Website", imageSrc: img4 },
+  { title: "Contact Page", imageSrc: cont },
 ];
+
+// HireMe images
+export const hireMeImages = {
+  girlImg: girl,
+  variantImg: propVariant,
+};
+
+// Hero illustration
+export const heroImages = {
+  frame68,
+  propDefault,
+  sms,
+};
