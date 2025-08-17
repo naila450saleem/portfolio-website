@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/naila-portfolio/", // 👈 VERY IMPORTANT
+ base: '/portfolio-website/', // 👈 VERY IMPORTANT
   plugins: [react()],
 })
