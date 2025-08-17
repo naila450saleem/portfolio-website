@@ -1,0 +1,179 @@
+/* Contact.css */
+.contact-wrapper {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 16px;
+  gap: 40px;
+}
+
+.contact-heading {
+  width: 100%;
+  max-width: 768px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-title {
+  font-weight: 700;
+  font-size: 55px;
+  color: #344054;
+}
+
+.highlight-title {
+  font-weight: 600;
+  font-size: 55px;
+  color: #FD853A;
+}
+
+.contact-subtitle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-input-box {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 24px;
+  border-radius: 999px;
+  border: 1px solid #E4E7EC;
+  background-color: white;
+}
+
+.contact-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #FFEAD5;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-input {
+  flex-grow: 1;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #1D2939;
+}
+
+.contact-button {
+  padding: 8px 24px;
+  background-color: #FD853A;
+  color: white;
+  font-weight: 600;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #e4752f;
+}
+
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  font-weight: 500;
+  color: black;
+  font-size: 14px;
+}
+
+.contact-icon-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 48px 16px;
+    gap: 32px;
+  }
+  
+  .contact-title,
+  .highlight-title {
+    font-size: 42px;
+  }
+  
+  .contact-input-box {
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 16px;
+  }
+  
+  .contact-input {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .contact-button {
+    width: 100%;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-wrapper {
+    padding: 32px 12px;
+    gap: 24px;
+  }
+  
+  .contact-title,
+  .highlight-title {
+    font-size: 32px;
+  }
+  
+  .contact-subtitle {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .contact-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-icon-text {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-title,
+  .highlight-title {
+    font-size: 28px;
+  }
+  
+  .contact-input-box {
+    padding: 12px;
+  }
+}

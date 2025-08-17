@@ -1,0 +1,209 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  gap: 30px;
+  padding: 20px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+.quote-box {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .quote-box {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 138px;
+    justify-content: flex-start;
+  }
+}
+
+.quote-mark {
+  font-size: 28px;
+  color: #344054;
+  line-height: 1;
+}
+
+.quote-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #344054;
+  line-height: 1.5;
+}
+
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0; /* fixed margin-right issue */
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-center {
+    margin-right: 90px;
+    text-align: left;
+  }
+}
+
+.hero-btn {
+  height: 40px;
+  padding: 10px 22px;
+  border: 1px solid #171717;
+  background-color: white;
+  border-radius: 9999px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hero-heading {
+  display: flex;
+  gap: 6px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .hero-heading {
+    font-size: 48px;
+  }
+}
+
+.text-dark {
+  color: #171717;
+}
+
+.text-orange {
+  color: #FD853A;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #171717;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-subtitle {
+    font-size: 35px;
+  }
+}
+
+.hero-illustration {
+  position: relative;
+  width: 100%;
+  max-width: 952px;
+}
+
+.hero-bg-circle {
+  position: absolute;
+  bottom: 8px;
+  width: 90%;
+  height: 70%;
+  background-color: #FEB273;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  left: 5%;
+}
+
+.hero-frame {
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+  padding-right: 20% !important;
+  margin-top: -25%;
+}
+
+.hero:hover .hero-frame {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.girl-image {
+  position: relative;
+  z-index: 20;
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  margin-top: 0;
+  transition: transform 0.3s ease;
+  margin-left: 5%; 
+}
+
+@media (min-width: 768px) {
+  .girl-image {
+    width: 60%;
+    max-width: 400px;
+    margin-top: 5%;
+    margin-left: 20%;
+  }
+}
+
+.toggle-buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  display: flex;              /* ✅ ab hamesha visible */
+  justify-content: center;
+  z-index: 30;
+}
+
+.experience-box {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .experience-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    width: 169px;
+    height: 125px;
+  }
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.experience-years {
+  font-size: 28px;
+  font-weight: bold;
+  color: #171717;
+  line-height: 1;
+}
+
+.experience-text {
+  font-size: 14px;
+  color: #171717;
+}
+
+

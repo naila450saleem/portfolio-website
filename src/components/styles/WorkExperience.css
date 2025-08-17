@@ -1,0 +1,280 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* WorkExperience.css */
+
+.work-experience-container {
+  width: 100%;
+  max-width: 1200px; /* center me control */
+  min-height: auto;
+  padding: 0 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* mobile me center */
+  overflow-x: hidden; /* 🚫 horizontal scroll */
+}
+
+/* Desktop large screen */
+@media (min-width: 1024px) {
+  .work-experience-container {
+    min-height: auto;
+    padding: 0 40px 64px 40px;; /* smaller padding to avoid scroll */
+    align-items: flex-start;
+  }
+}
+
+/* Heading */
+.work-experience-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Geist', sans-serif;
+  flex-wrap: wrap; /* wrap text for mobile */
+margin-left: 350px;
+}
+
+@media (min-width: 1024px) {
+  .work-experience-heading {
+    height: auto;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 64px;
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+.heading-main {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #344054;
+  margin-left: -110%;
+}
+
+.heading-orange {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #FD853A;
+}
+
+@media (min-width: 640px) {
+  .heading-main,
+  .heading-orange {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading-main,
+  .heading-orange {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile Version */
+.work-mobile {
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .work-mobile {
+    display: none;
+  }
+}
+
+.work-item {
+  margin-bottom: 32px;
+}
+
+.work-dot-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.outer-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px dashed #1D2939;
+  background-color: white;
+  position: relative;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+
+.inner-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+.orange {
+  background-color: #FD853A;
+}
+
+.teal {
+  background-color: #2dd4bf;
+}
+
+.work-details {
+  flex: 1;
+}
+
+.work-company {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1D2939;
+  margin-bottom: 4px;
+  margin-left: 15px;
+}
+
+.work-duration {
+  color: #98A2B3;
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+
+.work-role {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1D2939;
+  margin-bottom: 8px;
+  margin-left: 15px;
+}
+
+.work-desc {
+  color: #98A2B3;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-left: 15px;
+}
+
+/* Desktop Version */
+.work-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .work-desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.work-left-column,
+.work-right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1; /* responsive columns */
+  padding-left: 10%;
+}
+
+.work-left-column {
+  gap: 40px;
+}
+
+.work-right-column {
+  gap: 40px;
+}
+
+.column-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-company {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #1D2939;
+}
+
+.left-duration {
+  font-size: 1rem;
+  color: #98A2B3;
+}
+
+.right-role {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #1D2939;
+}
+
+.right-desc {
+  font-size: 1rem;
+  color: #98A2B3;
+}
+
+/* Middle Line */
+.work-middle-line {
+  position: relative;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .work-middle-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.work-middle-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #1D2939,
+    #1D2939 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+.middle-dot-wrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.middle-outer-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px dashed #1D2939;
+  background: white;
+  position: absolute;
+}
+
+.middle-inner-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  z-index: 1;
+}

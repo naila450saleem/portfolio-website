@@ -1,0 +1,22 @@
+.arrow-button-container {
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+ 
+}
+
+.arrow-icon {
+  stroke: #FD853A !important; /* By default arrow orange dikhe */
+  transition: stroke 0.3s ease;
+}
+
+/* Hover par arrow ka color white ho jaye */
+.arrow-button-container:hover .arrow-icon {
+  stroke: white !important;
+}
+
+
+

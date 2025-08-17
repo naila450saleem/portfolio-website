@@ -1,0 +1,102 @@
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  width: 100%;                  /* 🔹 full width on small screens */
+  max-width: 360px;             /* 🔹 not too large */
+  height: auto;                 /* 🔹 remove fixed height */
+  border-bottom: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+/* Default buttons */
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 60px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  width: 45%;                   /* 🔹 2 buttons share width */
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Active button */
+.toggle-btn.active {
+  background-color: #fd853a;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  width: 55%;                   /* 🔹 active button thoda bada */
+  height: 45px;
+  border: 1px solid #d0d5dd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon handling */
+.btn-icon {
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn:hover .btn-icon,
+.toggle-btn.active .btn-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.btn-text {
+  display: inline-block;
+}
+
+/* 🔹 Mobile screens */
+@media (max-width: 480px) {
+  .toggle-container {
+    max-width: 280px;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .toggle-btn {
+    font-size: 12px;
+    height: 36px;
+    width: 44%;
+  }
+
+  .toggle-btn.active {
+    font-size: 14px;
+    height: 40px;
+    width: 52%;
+  }
+}
+
+/* 🔹 Tablet screens */
+@media (min-width: 481px) and (max-width: 768px) {
+  .toggle-container {
+    max-width: 320px;
+  }
+
+  .toggle-btn {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .toggle-btn.active {
+    font-size: 16px;
+    height: 45px;
+  }
+}

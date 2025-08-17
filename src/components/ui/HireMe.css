@@ -1,0 +1,175 @@
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative; /* ensure it's not absolute */
+}
+
+
+
+.hire-me-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  background-color: #F2F4F7;
+  border-radius: 32px;
+  gap: 48px;
+}
+
+@media (min-width: 1024px) {
+  .hire-me-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 71px;
+    border-radius: 50px;
+    gap: 96px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    margin: 5%;
+    margin-right: 30px;
+
+  }
+}
+
+.hire-me-image-box {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hire-me-image {
+  position: absolute;
+  inset: 0;
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+
+.hire-me-image.default {
+  z-index: 2;
+  transform: translateY(0);
+}
+
+.hire-me-image.variant {
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-5px) scale(0.95);
+}
+
+
+.hire-me-image-box:hover .default {
+  transform: translateY(12px);
+}
+
+.hire-me-image-box:hover .variant {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.hire-me-text {
+  width: 100%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: -20px;
+  margin-right: 50px;
+  margin-bottom: 40px;
+}
+
+.hire-me-heading {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2.5rem;
+  font-weight: 600;
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .hire-me-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hire-me-heading {
+    font-size: 3.75rem;
+  }
+}
+
+.hire-me-description {
+  color: #98A2B3;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+@media (min-width: 640px) {
+  .hire-me-description {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hire-me-description {
+    font-size: 1.25rem;
+  }
+}
+
+.hire-me-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (min-width: 640px) {
+  .hire-me-stats {
+    flex-direction: row;
+  }
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1D2939;
+}
+
+@media (min-width: 640px) {
+  .stat-number {
+    font-size: 2.25rem;
+  }
+}
+
+.stat-label {
+  font-size: 1.125rem;
+  color: #667085;
+}
+
+.hire-me-button {
+  width: fit-content;      
+  padding: 16px 24px;
+  font-size: 1.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid #151515;
+  color: #151515;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.hire-me-button:hover {
+  background-color: #151515;
+  color: white;
+}

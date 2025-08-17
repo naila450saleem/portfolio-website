@@ -1,0 +1,21 @@
+.orange-button {
+  width: 144px;
+  height: 66px;
+  padding: 20px 40px; /* px-10 py-5 */
+  gap: 10px; /* gap-2.5 */
+  border-radius: 60px;
+  background-color: #FD853A;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.orange-button:hover {
+  background-color: #e46e24;
+}
