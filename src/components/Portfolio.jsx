@@ -9,23 +9,28 @@ import ClientOnly from './ui/ClientOnly';
 
 import './styles/Portfolio.css'; // 👈 Make sure this CSS file exists
 
+// ✅ Import images from assets
+import website1 from "../assets/website1.png";
+import website2 from "../assets/website2.png";
+import website3 from "../assets/website.png";
+
 const buttons = ['All', 'Web Design', 'App Design', 'Branding'];
 const portfolioData = [
   {
     title: "Admin-Dashboard",
-    image: "./website1.png",
+    image: website1,
     href: "#",
     desc: "A modern e-commerce platform for online shopping.",
   },
   {
     title: "E-Commerce Website",
-    image: "./website.png",
+    image: website3,
     href: "#",
     desc: "A food delivery app to order meals from nearby restaurants.",
   },
   {
     title: "Food Website",
-    image: "./website2.png",
+    image: website2,
     href: "#",
     desc: "Personal website to showcase work and skills.",
   },

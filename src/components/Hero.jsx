@@ -3,6 +3,10 @@ import DualToggleButtons from "./ui/DualButtons";
 import { Star } from "lucide-react";
 import "./styles/Hero.css";
 
+// ✅ Import all images from src/assets
+import girlImg from "../assets/girl.png";
+import frame68 from "../assets/Frame 68.svg";
+
 const Hero = () => {
   return (
     <div className="hero">
@@ -30,15 +34,14 @@ const Hero = () => {
           <div className="hero-bg-circle"></div>
 
           <div className="hero-frame">
-            <img src="./Frame 68.svg" alt="Frame" width="1017" height="688" />
+            <img src={frame68} alt="Frame" width="1017" height="688" />
           </div>
 
-         <img
-  src="./girl.png"
-  alt="naila"
-  className="w-20 h-auto girl-image"
-/>
-
+          <img
+            src={girlImg}
+            alt="naila"
+            className="w-20 h-auto girl-image"
+          />
 
           <div className="toggle-buttons">
             <DualToggleButtons />

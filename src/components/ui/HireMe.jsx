@@ -2,23 +2,17 @@ import React from "react";
 import CustomeText from "./CustomeText";
 import ClientOnly from "./ClientOnly";
 import "./HireMe.css"; // Make sure the path is correct
+import girlImg from "../../assets/girl.png";
+import variantImg from "../../assets/Property1Variant2.svg";
 
 const HireMe = () => {
   return (
     <div className="hire-me-container">
       {/* Left Image Box */}
-      <div className="hire-me-image-box">
-        <img
-          src="./girl.png"
-          alt="Hire me"
-          className="hire-me-image default"
-        />
-        <img
-          src="./Property1Variant2.svg"
-          alt="Hire me hover"
-          className="hire-me-image variant"
-        />
-      </div>
+     <div className="hire-me-image-box">
+  <img src={girlImg} alt="Hire me" className="hire-me-image default" />
+  <img src={variantImg} alt="Hire me hover" className="hire-me-image variant" />
+</div>
 
       {/* Right Text Content */}
       <div className="hire-me-text">
