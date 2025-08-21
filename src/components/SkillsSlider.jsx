@@ -8,6 +8,8 @@ const SkillsSlider = () => {
     "HTML",
     "CSS",
     "Tailwind",
+    "UI/UX",
+    "Figma",
   ];
 
   return (

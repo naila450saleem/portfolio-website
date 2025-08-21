@@ -13,7 +13,7 @@ const AboutPage = () => {
         </div>
 
         <p className="about-description">
-          Hello! I'm <strong>Naila</strong>, a passionate front-end developer focused on building responsive and user-friendly websites. Skilled in HTML, CSS, JavaScript, and ReactJS — I love bringing creative ideas to life through clean code.
+          Hello! I'm <strong>Naila</strong>, a passionate front-end developer and UI/UX designer focused on building responsive and user-friendly websites. Skilled in HTML, CSS, JavaScript, ReactJS, and Figma — I love bringing creative ideas to life through clean code and intuitive design.
         </p>
 
         <div className="about-stats">
