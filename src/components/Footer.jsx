@@ -12,7 +12,7 @@ import "./styles/Footer.css";
 const Footer = () => {
   const navigation = ["Home", "About", "Service", "Resume", "Project", "Contact"];
   const iconsAndUrl = [
-    { icon: FacebookIcon, url: "https://facebook.com/nailasaleem" },
+    { icon: FacebookIcon, url: "https://facebook.com/naila_saleem450" },
     { icon: MessageCircle, url: "https://wa.me/923476354569" },
     { icon: InstagramIcon, url: "https://instagram.com/nailasaleem" },
     { icon: Github, url: "https://github.com/naila450saleem" },
@@ -82,7 +82,7 @@ const Footer = () => {
         rel="noopener noreferrer"
         className="social-icon"
       >
-        <Icon size={16} />
+        <Icon size={14} />
       </a>
     );
   })}
