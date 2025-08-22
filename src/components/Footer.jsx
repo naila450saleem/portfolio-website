@@ -1,6 +1,6 @@
 // Footer.jsx (Tailwind CSS removed, plain CSS classNames added)
 import React from "react";
-import { FacebookIcon, YoutubeIcon, InstagramIcon, TwitterIcon, MessageCircle, ArrowUpRight } from "lucide-react";
+import { FacebookIcon, YoutubeIcon, InstagramIcon, TwitterIcon, MessageCircle, Github, ArrowUpRight } from "lucide-react";
 
 import CustomeText from "./ui/CustomeText";
 import { Link } from "react-router-dom";
@@ -13,13 +13,13 @@ const Footer = () => {
   const navigation = ["Home", "About", "Service", "Resume", "Project", "Contact"];
   const iconsAndUrl = [
     { icon: FacebookIcon, url: "https://facebook.com/nailasaleem" },
-    { icon: YoutubeIcon, url: "https://youtube.com" },
     { icon: MessageCircle, url: "https://wa.me/923476354569" },
     { icon: InstagramIcon, url: "https://instagram.com/nailasaleem" },
-    { icon: TwitterIcon, url: "https://twitter.com" },
+    { icon: Github, url: "https://github.com/naila450saleem" },
+      { icon: "fiverr", url: "https://www.fiverr.com/nailasaleem450" },
   ];
 
-  const contact = ["+92 3476354569", "nailasaleemm450gmail.com", "hello.com"];
+  const contact = ["+92 3476354569", "nailasaleem450gmail.com" ];
 
   return (
     <footer className="footer">
@@ -55,15 +55,39 @@ const Footer = () => {
             Naila Saleem – Transforming ideas into responsive and user-friendly websites.....
           </p>
           <div className="footer-icons">
-            {iconsAndUrl.map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <a key={idx} href={item.url} target="_blank" rel="noopener noreferrer" className="social-icon">
-                  <Icon size={16} />
-                </a>
-              );
-            })}
-          </div>
+  {iconsAndUrl.map((item, idx) => {
+    // Fiverr ka case handle karo
+    if (item.icon === "fiverr") {
+      return (
+        <a
+          key={idx}
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-icon"
+          style={{ fontSize: "11px" }}
+        >
+          Fiverr
+        </a>
+      );
+    }
+
+    // Normal icons (Facebook, Instagram, GitHub, etc.)
+    const Icon = item.icon;
+    return (
+      <a
+        key={idx}
+        href={item.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="social-icon"
+      >
+        <Icon size={16} />
+      </a>
+    );
+  })}
+</div>
+
         </div>
 
         <div className="footer-column">

@@ -20,10 +20,10 @@ import frame68 from "../assets/Frame 68.svg";
 import propDefault from "../assets/Property1Default.svg";
 import propVariant from "../assets/Property1Variant2.svg";
 import sms from "../assets/sms.svg";
-import ui1 from "../assets/ui1.png";
-import ui2 from "../assets/ui2.png";
-import ui3 from "../assets/ui3.png";
-import ui4 from "../assets/ui4.png";
+// import ui1 from "../assets/ui1.png";
+// import ui2 from "../assets/ui2.png";
+// import ui3 from "../assets/ui3.png";
+// import ui4 from "../assets/ui4.png";
 
 // Experiences
 export const experiences = [
@@ -102,10 +102,10 @@ export const cardData = [
   { title: "Dashboard", imageSrc: img3 },
   { title: "Cloth Website", imageSrc: img4 },
   { title: "Contact Page", imageSrc: cont },
-   { title: "UI Design 1", imageSrc: ui1 },
-  { title: "UI Design 2", imageSrc: ui2 },
-  { title: "UI Design 3", imageSrc: ui3 },
-  { title: "UI Design 4", imageSrc: ui4 },
+  //  { title: "UI Design 1", imageSrc: ui1 },
+  // { title: "UI Design 2", imageSrc: ui2 },
+  // { title: "UI Design 3", imageSrc: ui3 },
+  // { title: "UI Design 4", imageSrc: ui4 },
 ];
 
 // HireMe images
